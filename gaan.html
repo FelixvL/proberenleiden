@@ -1,7 +1,29 @@
 <script>
 	function starten(){
+		var leidenletsgo;
+		leidenletsgo = "bert";
+		
+		if(leidenletsgo == "fred"){
+			alert("kijk uit daar heb je fred");
+		}
+
+		for( var i = 0 ; i < 4 ; i++  ){
+			console.log(i);
+		}
+		
+		optellen(3); // argument 7
+		optellen(9); // argument 7
+
 		var resultaatsdiv = document.getElementById("resultaat");
-		resultaatsdiv.innerHTML = "yes";
+		resultaatsdiv.innerHTML = leidenletsgo;
+	}
+
+	function optellen(mijngetal){   // parameter mijngetal
+		var b = 5;
+		var c = mijngetal + b;
+		if(c < 10){
+			console.log("onder de tien");
+		}
 	}
 </script>
 
